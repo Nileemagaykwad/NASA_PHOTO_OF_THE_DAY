@@ -43,3 +43,15 @@ print the output of app
 this can be used to know container id and ports. 
 for example ports comes as `0.0.0.0:8000->3000/tcp` then the app will be live at `http://localhost:8000/`
 
+to run through Docker-compose ------------
+
+to build with docker-compose
+## `docker-compose build nasaimage'
+
+here nasaimage is name of service that should be build
+
+to start the container with docker-compose 
+## `docker-compose up nasaimage`
+
+it should enable to access our application from http://localhost:3000 just like we normally would for a create-react-app instance!
+
