@@ -1,0 +1,18 @@
+# node base Image pull
+FROM node:12
+
+#set work Directory
+WORKDIR /usr/src/app
+
+
+#copy package.json first parameter is outer and 2nd is inner in relation to container 
+COPY package.json /usr/src/app
+
+RUN npm install
+
+#copy whole code to workdir
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
