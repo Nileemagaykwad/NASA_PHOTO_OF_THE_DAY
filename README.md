@@ -35,7 +35,7 @@ Building your image
 ## `docker build -t nasa-apod .`
 
 Run the image
-## `docker run -p 8000:3000 nasa-apod-1`
+## `docker run -p 8000:3000 nasa-apod`
 
 print the output of app 
 ## `docker ps`
